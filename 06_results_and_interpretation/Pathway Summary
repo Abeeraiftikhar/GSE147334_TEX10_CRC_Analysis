@@ -1,0 +1,80 @@
+# Pathway Summary
+
+> **Dataset:** GSE147334 | **Tool:** DAVID KEGG | **Author:** Abeera Iftikhar | **May 2026**
+
+---
+
+## Overview
+
+KEGG pathway enrichment was performed separately for upregulated (n=103) and
+downregulated (n=132) DEGs using DAVID Bioinformatics. A total of **10 KEGG
+pathways** were identified — 8 from upregulated and 2 from downregulated genes.
+
+---
+
+## Upregulated DEGs — 8 Pathways
+
+| # | Pathway | Genes | FDR | Significant |
+|---|---|---|---|---|
+| 1 | Systemic lupus erythematosus | 8 | 6.39×10⁻⁴ | ✅ FDR < 0.01 |
+| 2 | Cornified envelope formation | 9 | 6.39×10⁻⁴ | ✅ FDR < 0.01 |
+| 3 | Alcoholism | 8 | 1.50×10⁻³ | ✅ FDR < 0.01 |
+| 4 | Neutrophil extracellular trap formation | 8 | 1.50×10⁻³ | ✅ FDR < 0.01 |
+| 5 | Viral carcinogenesis | 7 | 1.29×10⁻² | ✅ FDR < 0.05 |
+| 6 | Staphylococcus aureus infection | 4 | 3.10×10⁻¹ | — nominal |
+| 7 | Estrogen signaling pathway | 4 | 5.96×10⁻¹ | — nominal |
+| 8 | Necroptosis | 4 | 7.32×10⁻¹ | — nominal |
+
+---
+
+## Downregulated DEGs — 2 Pathways
+
+| # | Pathway | Genes | p-value | Significant |
+|---|---|---|---|---|
+| 1 | Growth hormone synthesis & action | 4 | 1.17×10⁻² | — nominal |
+| 2 | Wnt signaling pathway | 4 | 2.98×10⁻² | — nominal |
+
+> Neither downregulated pathway achieved Benjamini FDR < 0.05.
+> Results are nominally significant — treat as hypothesis-generating.
+
+---
+
+## Key Biological Themes
+
+| Theme | Pathways Involved | Direction |
+|---|---|---|
+| Epithelial differentiation | Cornified envelope formation | ↑ Up |
+| Immune regulation | Systemic lupus erythematosus, NET formation, Staphylococcus infection | ↑ Up |
+| Cancer progression | Viral carcinogenesis, Necroptosis | ↑ Up |
+| Hormone signaling | Estrogen signaling, Growth hormone synthesis | ↑ Up / ↓ Down |
+| Tumor development | Wnt signaling pathway | ↓ Down |
+
+---
+
+## DAVID Settings Used
+
+| Parameter | Value |
+|---|---|
+| Identifier type | Official Gene Symbol |
+| Species | Homo sapiens |
+| EASE threshold | 0.05 |
+| Count threshold | 2 |
+| FDR method | Benjamini-Hochberg |
+| Database | KEGG PATHWAY |
+
+---
+
+## Output Files
+
+| File | Location |
+|---|---|
+| Upregulated KEGG results | `04_DAVID_KEGG/DAVIDChartReport_Upregulated.csv` |
+| Downregulated KEGG results | `04_DAVID_KEGG/DAVIDChartReport_Downregulated.csv` |
+| Combined summary | `04_DAVID_KEGG/KEGG_All_Pathways_Summary.csv` |
+| Bar chart | `05_KEGG_plots/KEGG_Bar_Chart.png` |
+| Bubble plot | `05_KEGG_plots/KEGG_Bubble_Plot.png` |
+| Combined figure | `05_KEGG_plots/KEGG_Combined_Figure.png` |
+
+---
+
+*Analysis by Abeera Iftikhar | May 2026 | Dataset: GSE147334*
