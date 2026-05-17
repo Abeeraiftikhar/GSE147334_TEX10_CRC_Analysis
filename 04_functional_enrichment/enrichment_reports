@@ -1,1 +1,9 @@
+## Enrichment Reports
 
+KEGG pathway enrichment was performed separately for upregulated and downregulated
+DEGs using DAVID Bioinformatics (v2023). Gene symbols were submitted against a
+Homo sapiens background at EASE threshold 0.05. A total of 10 KEGG pathways were
+identified: 8 from upregulated DEGs (5 FDR-significant) and 2 from downregulated
+DEGs (nominally significant). Results are stored in 04_DAVID_KEGG/ as raw DAVID
+chart report CSVs and a combined summary file. Visualizations (bar chart, bubble
+plot, combined figure) are in 05_KEGG_plots/.
